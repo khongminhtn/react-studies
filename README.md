@@ -12,4 +12,4 @@ Create a menu/application that reacts to user's role. If the user is a manager, 
 
 ---
 ### Tooltip Widget:
-Creating a small pop up widget that essentially serve as a guidance for the users.
+Created a small pop up widget that essentially serve as a guidance for the users. This tool would be particularly useful for sites that contain a high amount of information.
