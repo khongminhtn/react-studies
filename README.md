@@ -17,4 +17,4 @@ Created a small pop up widget that essentially serve as a guidance for the users
 
 ---
 ### Timer component:
-Created a timer that has a some buttons for the timer to respond to. This is a very small and simple too, yet I can see this tool being used in many many applications.
+Created a timer that has a some buttons for the timer to respond to. This is a very small and simple tool, yet I can see this tool being used in many many applications.
