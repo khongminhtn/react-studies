@@ -10,7 +10,7 @@ ReactDOM.render(
 
 ReactDOM.render(
     <div>
-        <Tooltip text="Text to be displayed in tooltip">React Quickly</Tooltip> is a book that teaches you how to use React
+        <Tooltip text="Author: Azat Mardan">React Quickly</Tooltip> is a book that teaches you how to use React
     </div>,
     document.getElementById("tooltip")
 )
