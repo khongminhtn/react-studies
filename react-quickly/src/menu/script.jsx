@@ -1,30 +1,43 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
-/*Menu component will render individual link tags, these tags are 
+/*Menu component will render individual Link, the data are 
 either hardcode or retreived from server*/
 class Menu extends React.Component {
     render() {
-        let menus = [
+        let menus = [ /* Data in this case is hard coded */
             'Home',
+            'About',
             'Services',
             'Portfolio',
             'Contact us'
         ]
-        return React.createElement('div', null, menus.map((v, i) => {
-            return React.createElement('div', 
-                {key: i}, 
-                React.createElement(Link, {label: v})
-                )
-        }))
+
+        return (
+        <div>
+            {menus.map((v, i) => {
+                return <span key={i} style={{padding: '10px'}}><Link label={v}/></span>
+            })}
+        </div>
+        )
     }    
 }
 
+/*Link component is created with props that will be used for
+hyperlink reference and element*/
 class Link extends React.Component {
+    render() {
+        const url='/' 
+        + this.props.label
+        .toLowerCase()
+        .trim()
+        .replace(' ', '-')
 
+        return (
+            <a href={url}>
+                {this.props.label}
+            </a>
+        )
+    }
 }
 
-ReactDOM.render(
-    React.createElement(Menu, null),
-    document.getElementById("menu")
-)
+export {Menu}
