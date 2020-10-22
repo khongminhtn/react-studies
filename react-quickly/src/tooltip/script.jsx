@@ -21,6 +21,8 @@ class Tooltip extends React.Component {
             left
         })
     };
+
+    /* */
     render() {
         const style = {
             zIndex: (this.state.opacity) ? 1000:-1000,
