@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Menu } from './menu/script';
 import { Tooltip } from './tooltip/script';
-import { TimeWarrper} from './timer/script';
+import { TimerWrapper} from './timer/script';
 
 ReactDOM.render(
     <Menu/>,
@@ -17,6 +17,6 @@ ReactDOM.render(
 )
 
 ReactDOM.render(
-    <TimeWrapper/>,
-    document.getElemmentByID('timer-app')
+    <TimerWrapper/>,
+    document.getElementById("timer")
 )

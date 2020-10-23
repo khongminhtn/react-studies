@@ -10,7 +10,7 @@ class TimerWrapper extends React.Component {
         super(props)
         this.state = {
             timeLeft: null,
-            timer: 0
+            timer: null
         }
     }
 
@@ -20,10 +20,10 @@ class TimerWrapper extends React.Component {
         clearInterval(this.state.timer)
         let timer = setInterval(() => {
             var timeLeft = this.state.timeLeft - 1
-            if (timeLeft == 0) clearInterval(timer)
+            if (timeLeft === 0) clearInterval(timer)
             this.setState({timeLeft: timeLeft})
         }, 1000)
-        return this.state({timeLeft: timeLeft, timer: timer})
+        return this.setState({timeLeft: timeLeft, timer: timer})
     }
     render() {
         return (
@@ -33,6 +33,8 @@ class TimerWrapper extends React.Component {
                     <Button time="10" startTimer={this.startTimer}/>
                     <Button time="15" startTimer={this.startTimer}/>
                 </div>
+                <Timer timeLeft={this.state.timeLeft}/>
+                <audio id="audios" src="creativeminds.mp3"></audio>
             </div>
         )
     }
@@ -41,17 +43,24 @@ class TimerWrapper extends React.Component {
 
 class Timer extends React.Component {
     render() {
-
+        if (this.props.timeLeft === 0){
+            document.getElementById('audios').play()
+        }
+        if (this.props.timeLeft === null || this.props.timeLeft === 0) 
+            return <div/>
+        return <h1>Time Left: {this.props.timeLeft}</h1>
     }
 }
 
 
 class Button extends React.Component {
-    startTimer(event) {
-
-    }
     render() {
-
+        return (
+            <button type="button" className='btn btn-secondary'
+                onClick={() => {this.props.startTimer(this.props.time)}}>
+                    {this.props.time} seconds
+            </button>
+        )
     }
 }
 
