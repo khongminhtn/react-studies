@@ -1,8 +1,8 @@
 React Quickly – Azat Mardan
 
-In this book Azat Mardan had managed to walk me through the core concepts, eco system tools and libraries around React. My understanding on topics such as React, Redux, GraphQL, Webpack and Jest will be demonstrated in this repository through commenting on the projects of the book.
+In this book Azat Mardan had managed to walk me through the core concepts, eco system tools and libraries around React. My understanding of React Stack; Redux, GraphQL, Webpack, React Router, Exporess.js, Node.js and Jest will be demonstrated in this repository through commenting on projects.
 
-Projects in this book are not arbitrary projects, rather they are mini projects, yet powerful in putting that knowledge to practice. I see these tasks as tools that can be used in many more projects that I will be working on wether it is personally or professionally.
+Projects in this book are not arbitrary projects, rather they are a combination of various project in scales. I see these tasks as tools that can be used in many more projects that I will be working on whether it is personally or professionally.
 
 # Tools:
 ---
