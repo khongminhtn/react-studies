@@ -16,7 +16,7 @@ Created a timer that has a some buttons for the timer to respond to. This is a v
 
 # React Libraries:
 ### Webpack
-Webpack is a react module that allows bundling of assets to avoid uneccessary importing to html files, which could become a cluster. Assets such as JavaScript, CSS, Images, Data files can use external modules to import into a single JavaScript file and then import only that single JavaScript file into the html.  
+Webpack is a react module that allows bundling of assets to avoid uneccessary importing to html files, which could become a cluster. Assets such as JavaScript, CSS, Images, Data files can use external loaders to load assets to entry file and then import only that single entry script to the html.  
 
 ### React Routing
 URL Routing solves some crucial problems with SPA;
