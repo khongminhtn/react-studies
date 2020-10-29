@@ -25,3 +25,25 @@ URL Routing solves some crucial problems with SPA;
 - Could not share precise content with friends.
 - Search Engine could not index site (no distinct URL).
 It solves this by configuring URL that does not map to a physical file. Only sematically meaningful to users. Incredibly useful for user experience and SEO.
+
+### Redux  
+Redux is library that implements the Flux architecture. React is a view that works with unidirectional data flow, meaning that it is a one-way binding or one-way data flow. Unidirectional data flow has some advantages:
+- Code readability due to one source of truth (unidirectional data flow)
+- Debuggable code 
+- Server side rendering without a headless browser
+**Action -> Reducer -> Dispactcher -> Store**  
+Where **action** is the description of the action, **reducer** is the actual action, **dispatcher** is what passes the reducer to the store and **store** is the globalized state.  
+ 
+### GraphQL
+In the development phrase, for front-end to work efficiently mock data in json format need to be updated quickly and elegantly. This fast working environemnt is from the rise of agile development and lean start up methodology. A brilliant solution to this is GraphQL. Back-end servers will provide a GraphQL api, where it is often used with Relay, redux can also work. GraphQL uses query strings that returns data in JSON format.  
+
+**GraphQL Reverse Control Advantages:**  
+- *Client-specific queries* - client get what they need.
+- *Structure, arbitrary code* - the uniform API offers server-side flexibility
+- *Strong typing* - Robust validation in resposnse, easier data consumption
+- *Hierarchical queries* - queries follow data they return
+- *Faster prototyping* - query has single end point
+- *Fewer API calls* - data structure is dictated by the front-end app
+- *Allows hash-less URL and broswer history*
+ 
+**Jest**  
