@@ -46,4 +46,31 @@ In the development phrase, for front-end to work efficiently mock data in json f
 - *Fewer API calls* - data structure is dictated by the front-end app
 - *Allows hash-less URL and broswer history*
  
-**Jest**  
+### Jest  
+Properly tested codes will saves hours and hours of debugging later down the line. In software development, the codes are considered as liability. The software is an asset, because it produces income whereas the code is time consuming.  
+ 
+**Types of Testing**  
+*Unit Test* 70% - Test system tests standalone methods and classes.  
+*Service (intergration) test* 20%
+*UI (acceptance) 10% - Mimics agile user stories, entire system testing.
+
+### Node.js: Universal JavaScript (fullstack javascript):  
+**Some issues with SPAs:**
+1. *No search engine optimization (SEO)* - ineffcient search crawlers.
+2. *Poor performance* - huge bundled files and AJAX calls upon load up.
+3. *Poor maintainability* - Duplication of code on browser and server.
+ 
+**Problems elaboration**
+1. *Page indexing*
+- Most SPAs serve protected resrouces and dont need indexing.
+- Searching Engines require indexing
+ 
+2. *Better Performance*
+- First page render is incredibily crucial.
+    - Bundle with over 1 mb is too large.
+- Server side rendering can render first page with speed. Everything else can load later.
+- Performance boost comes from the reduced waiting time for AJAX calls.
+- Preloading data and caching on server side before AJAX calls also helps.
+ 
+3. *Better code maintainability*
+- Code is a liability, the more code, the more effort required to maintain
