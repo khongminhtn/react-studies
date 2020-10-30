@@ -74,3 +74,30 @@ Properly tested codes will saves hours and hours of debugging later down the lin
  
 3. *Better code maintainability*
 - Code is a liability, the more code, the more effort required to maintain
+ 
+ 
+**Universal JavaScript Implementation**
+1. Generate HTML from react components.
+2. Render HTML code, generated from React components in Express servers.
+3. Implement and serve React browser files via Express.
+
+**Uniqueness of Express.js**
+1. Possibly "the most popular" Node.js framework; simple yet highly configurable
+2. Takes place of an HTTP(S) servers, replacing:
+    - Microsoft IIS
+    - Apache httpd
+    - Nginx
+    - Apache Tomcat
+3. Allows the building of high scaleable performant systems; non-blocking I/O
+4. Vast ecosystems of middleware, stable code base.
+ 
+**Simplified procedure of Universal JavaScript**
+1. Set up the server so that it provides data to the template and renders HTML(components and properties), such as index.js
+2. Create a template that output data unescaped, such as views/index.hbs
+3. Include the browser React file (ReactDOM.Render) in the template for interactivity, such as client/app.jsx.
+4. Create the Header,Footer and MessageBoard components.
+5. Set up build processes with Webpack, such as webpack.config.js
+ 
+![react-express](https://github.com/khongminhtn/studies-react/images/react-express.png)  
+ 
+> You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
