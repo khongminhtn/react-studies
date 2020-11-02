@@ -4,15 +4,35 @@ In this book Azat Mardan had managed to walk me through the core concepts, eco s
 
 Projects in this book are not arbitrary projects, rather they are a combination of various project in scales. I see these tasks as tools that can be used in many more projects that I will be working on whether it is personally or professionally.
 
-# Project Tools:
-### Menu
+# Projects:  
+### Book store with React Router.  
+**Incorporating areas of study**
+1. Project structure and Webpack configuration
+2. The host HTML file
+3. Creating Components
+4. Launching the project
+
+**Brief**  
+Build a simple e=commerce storefront for a bookstore.
+
+**Objectives**
+- Pass data to route and access it
+- Access URL parameters
+- Create modal windows with changing URLs
+- Use layouts by nesting routes
+ 
+# Mini projects:  
+### Menu  
 Create a menu/application that reacts to user's role. If the user is a manager, then the menu will display only the neccessary links for the manager, else it displays for customers.This layout's header will be displayed across many pages.
 
-### Tooltip Widget
+### Tooltip Widget  
 Created a small pop up widget that essentially serve as a guidance for the users. This tool would be particularly useful for sites that contain a high amount of information.
 
 ### Timer component
-Created a timer that has a some buttons for the timer to respond to. This is a very small and simple tool, yet I can see this tool being used in many many applications.
+Created a timer that has a some buttons for the timer to respond to. This is a very small and simple tool, yet I can see this tool being used in many many applications.  
+ 
+# React Fundamentals:
+
 
 # React Libraries:
 ### Webpack
@@ -101,3 +121,4 @@ Properly tested codes will saves hours and hours of debugging later down the lin
 ![react-express](https://github.com/khongminhtn/studies-react/images/react-express.png)  
  
 > You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
+
