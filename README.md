@@ -1,4 +1,4 @@
-React Quickly – Azat Mardan
+#React Quickly – Azat Mardan
 
 In this book Azat Mardan had managed to walk me through the core concepts, eco system tools and libraries around React. My understanding of React Stack; Redux, GraphQL, Webpack, React Router, Express.js, Node.js and Jest will be demonstrated in this repository through commenting on projects.
 
@@ -118,7 +118,7 @@ Properly tested codes will saves hours and hours of debugging later down the lin
 4. Create the Header,Footer and MessageBoard components.
 5. Set up build processes with Webpack, such as webpack.config.js
  
-![react-express](https://github.com/khongminhtn/studies-react/images/react-express.png)  
+![react-express](https://github.com/khongminhtn/studies-react/blob/main/images/react-express.png)  
  
 > You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
 
