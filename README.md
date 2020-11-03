@@ -6,8 +6,8 @@ Projects in this book are not arbitrary projects, rather they are a combination 
 
 # Projects:  
 ### Book store with React Router.  
-**Incorporating areas of study**
-1. Project structure and Webpack configuration
+**Incorporating areas of study (roadmap)**
+1. Project structure with npm, Babel and Webpack configuration
 2. The host HTML file
 3. Creating Components
 4. Launching the project
@@ -20,6 +20,14 @@ Build a simple e=commerce storefront for a bookstore.
 - Access URL parameters
 - Create modal windows with changing URLs
 - Use layouts by nesting routes
+ 
+**Techniques Illustration**
+- *Home (/)* - store front with book list
+- *Product page (/product/:id)* - a separate product page
+- *Cart (/cart)* - displays quantities and titles
+- *Checkout (/checkout)* - A print-ready invoice with list of books.
+
+ 
  
 # Mini projects:  
 ### Menu  
