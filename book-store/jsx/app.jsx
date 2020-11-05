@@ -49,7 +49,7 @@ const PRODUCTS = [
 
 // Stateless components
 const Heading = () => {
-    return <h1>Tueyn Book Store</h1>
+    return <h1>Tuyen Book Store</h1>
 }
 
 const Copy = () => {
@@ -69,6 +69,9 @@ class App extends React.Component {
     componentWillReceiveProps(nextProps) {
         this.isModal = (nextProps.location.state 
             && nextProps.location.state.modal)
+        
+        // Checks whether youre on modal screen or nonmodal
+        // if modal, assign children as previous children
         if (this.isModal 
             && nextProps.location.key 
             !== this.props.location.key) {
@@ -98,9 +101,29 @@ class App extends React.Component {
     }
 }
 
-
+// Home Page, shows full list of books
 class Index extends React.Component {
-
+    render() {
+        return (
+            <div>
+                <Copy/>
+                <p><Link to="/cart" className="btn btn-danger">Cart</Link></p>
+                <div>
+                    {PRODUCTS.map(picture => (
+                       <Link key={picture.id}
+                            to={{pathname: `/products/${picture.id}`,
+                                state: {
+                                    modal: true,
+                                    returnTo: this.props.location.pathname
+                                }
+                            }}>
+                            <img style={{margin: 10}} src={picture.src} height="100" />
+                        </Link>
+                    ))}
+                </div>
+            </div>
+        )
+    }
 }
 
 
