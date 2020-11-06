@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router'
 
 class Cart extends React.Component {
     render() {
@@ -32,4 +32,6 @@ class Cart extends React.Component {
             </div>
         )
     }
-};
+}
+
+export {Cart}
