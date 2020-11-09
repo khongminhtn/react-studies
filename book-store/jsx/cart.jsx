@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+// displays a list of books and their quantity in the shopping cart
+// uses 'cartItems' to get the list of books and their quantity
 class Cart extends React.Component {
     render() {
         return (

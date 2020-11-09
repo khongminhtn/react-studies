@@ -33,3 +33,5 @@ class Modal extends React.Component {
         )
     }
 }
+
+export {Modal}

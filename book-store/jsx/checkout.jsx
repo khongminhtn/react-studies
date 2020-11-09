@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+
 class Checkout extends React.Component {
     return() {
         let count = 0

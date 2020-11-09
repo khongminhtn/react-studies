@@ -6,7 +6,6 @@ import {hashHistory,
         Route,
         IndexRoute,
         Link,
-        IndexRoute,
         } from 'react-router';
 
 import Modal from './modal.jsx';
