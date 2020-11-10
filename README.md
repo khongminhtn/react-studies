@@ -39,9 +39,79 @@ Created a small pop up widget that essentially serve as a guidance for the users
 ### Timer component
 Created a timer that has a some buttons for the timer to respond to. This is a very small and simple tool, yet I can see this tool being used in many many applications.  
  
-# React Fundamentals:
+# React Fundamentals  
+### What is React
+- UI Components library
+- React creates composable UI, not from templates
+- Self-contained and block of functionality specific
+- Solve exactly the problem of complex website where View changes in reponse to data change.
 
-
+### JSX  
+JSX Code -> Transiler -> JS -> Browser  
+ 
+JSX is a replacement for React.createElement(name, keys:values, children), meaning that it allows for improvement in readability.  
+ 
+**Important Reminder**  
+- Use *className* and *htmlFor* instead of the standard HTML 
+- *style* attribute takes JavaScript object, not a string like HTML.
+- Ternary operators and IIFE are best for if/else statements
+- JSX requires the compiler Babel.
+ 
+### States and Properties
+**Important Reminder**
+- States are mutable, properties are immutable
+- *getInitialState* allows components to have an initial *state* object
+- *this.setState* updates only the passed properties.
+- {} is used to render variables and execute JavaScript expressions in JSX
+- this.state.NAME is a way to access state variables.
+- Stateless components are prefered way of working with React.
+ 
+### Life Cycles  
+Categories of events:
+- Mounting (Events executed once)
+    - componentWillMount()
+        - Happens before mounting to DOM
+    - componentDidMount()
+        - Happens after mounting and rendering
+- Updating (Events executed multiple times)
+    - *componentWillReceiveProps(nextProps)*
+        - Happens when component about to receive props
+    - *shouldComponentUpdate(nextProps, nextState)*
+        - bool allows optimizing component's render by determining when to update
+    - *componentWillUpdate(nextProps, nextState)*
+        - Happens right before the component is updated
+    - *componentDidUpdate(prevProps, prevState)*
+        - Happens right after the component is updated
+- Unmounting (Events executed once)
+    - componentWillUnmount function()
+        - Unbinds and detach any event listeners and do other clean ups before component is unmounted.
+ 
+![react-express](https://github.com/khongminhtn/studies-react/blob/main/images/lifecycletable.png)  
+Mounting -> Updating -> Unmouting
+**Important Reminder**
+- componentWillMount() will be rendered on the server and client
+- componentDidMount() invoked only client side
+- Mounting events are typically used to integrate React with other libraries and to get data from servers or store (redux)
+- shouldComponentUpdate() optimize rendering
+- Unmounting typically used for clean ups avoid any data leaks.
+- Updating is place for logic that relies on new properties and states.
+ 
+### Event Handlers  
+**Important Reminder**
+- onClick captures mouse and trackpad click
+- JSX syntax for handlers ```<a onNAME={this.METHOD}>```
+- Bind event using bind() in constructor() or JSX using *this*
+- use Ternary for auto binding
+- componentDidMount() triggered only on the browser
+- componentDidMount() abd componentWillUnmount() can be used to integrate React with other frameworks and events.
+ 
+### Scaling React Component
+**Important Reminder**
+- define default value by setting component's *defaultProps*
+- check type property using *isRequired* for form validation
+- Uplifting allows for reuse of common properties and methods and events
+- Higher-Order components are defined as a function that take another component as an argument
+ 
 # React Libraries:
 ### Webpack
 Webpack is a react module that allows bundling of assets to avoid uneccessary importing to html files, which could become a cluster. Assets such as JavaScript, CSS, Images, Data files can use external loaders to load assets to entry file and then import only that single entry script to the html.  
