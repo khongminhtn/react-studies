@@ -1,6 +1,6 @@
 # Table of Content  
 The following are sections re where you can see all my study notes on specific technology.
-- ReactJS
+- [ReactJS](https://github.com/khongminhtn/technology-studies#react-quickly--azat-mardan)
 
 
 # React Quickly – Azat Mardan
