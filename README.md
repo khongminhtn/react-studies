@@ -1,5 +1,4 @@
-# Table of Content  
-The following are sections re where you can see all my study notes on specific technology.
+# Table of Content for study notes  
 - [ReactJS](https://github.com/khongminhtn/technology-studies#react-quickly--azat-mardan)
 
 
