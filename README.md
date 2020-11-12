@@ -116,7 +116,7 @@ Mounting -> Updating -> Unmouting
 - Uplifting allows for reuse of common properties and methods and events
 - Higher-Order components are defined as a function that take another component as an argument
  
-# React Libraries:
+# React and Friends
 ### Webpack
 Webpack is a react module that allows bundling of assets to avoid uneccessary importing to html files, which could become a cluster. Assets such as JavaScript, CSS, Images, Data files can use external loaders to load assets to entry file and then import only that single entry script to the html.  
 
