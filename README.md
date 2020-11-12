@@ -91,7 +91,7 @@ Categories of events:
     - componentWillUnmount function()
         - Unbinds and detach any event listeners and do other clean ups before component is unmounted.
  
-![react-express](https://github.com/khongminhtn/studies-react/blob/main/images/lifecycletable.png)  
+![react-express](https://github.com/khongminhtn/technology-studies/tree/main/ReactJS/images/lifecycletable.png)  
 Mounting -> Updating -> Unmouting
 **Important Reminder**
 - componentWillMount() will be rendered on the server and client
@@ -201,7 +201,7 @@ Properly tested codes will saves hours and hours of debugging later down the lin
 4. Create the Header,Footer and MessageBoard components.
 5. Set up build processes with Webpack, such as webpack.config.js
  
-![react-express](https://github.com/khongminhtn/studies-react/blob/main/images/react-express.png)  
+![react-express](https://github.com/khongminhtn/technology-studies/tree/main/ReactJS/images/react-express.png)  
  
 > You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
 
