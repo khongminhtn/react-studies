@@ -224,5 +224,4 @@ Properly tested codes will saves hours and hours of debugging later down the lin
  
 ![react-express](https://github.com/khongminhtn/technology-studies/blob/main/ReactJS/images/react-express.png?raw=true)  
  
-> You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
  
