@@ -113,6 +113,31 @@ Mounting -> Updating -> Unmouting
 - Uplifting allows for reuse of common properties and methods and events
 - Higher-Order components are defined as a function that take another component as an argument
  
+# Thinking in React - By React Team.
+## 1) Break up the UI into a component Hierarchy.  
+A component should follow *Single Resposibility Principle*, that is, component should do 1 thing and 1 thing only.
+
+## 2) Build a static version in React.  
+Build a static version of the app without *Interactivity*, build components that takes other components and pass props into them.
+
+## 3) Identify the minimal representation of the UI state.  
+Think of the absolute minimum set of mutable state that the app needs, following the DRY principle.  
+ 
+1. Is it passed in from a parent via props? If so, it probably isn’t state.
+2. Does it remain unchanged over time? If so, it probably isn’t state.
+3. Can you compute it based on any other state or props in your component? If so, it isn’t state.
+ 
+## 4) Identify where your state should live.  
+React is all about one-way data flow down the component hierarchy. To determine where the state belong, follow the steps:  
+ 
+- Identify all components that renders using that state
+- Find the common component(a single component above all components that needs that state).
+- Either the common owner or higher up in the hierarchy should own that state.
+- If state does not belong anywhere, make a new component solely to hold that state and add it somewhere in the hierarchy above.
+ 
+## 5) Add inverse data flow.  
+Inverse data flow, flows up the hierarchy, passing data from child components to parent components for re-render.  
+ 
 # React and Friends
 ### Webpack
 Webpack is a react module that allows bundling of assets to avoid uneccessary importing to html files, which could become a cluster. Assets such as JavaScript, CSS, Images, Data files can use external loaders to load assets to entry file and then import only that single entry script to the html.  
@@ -200,4 +225,4 @@ Properly tested codes will saves hours and hours of debugging later down the lin
 ![react-express](https://github.com/khongminhtn/technology-studies/blob/main/ReactJS/images/react-express.png?raw=true)  
  
 > You should consider *every* user to be potentially either a malicious attacker or a negligent person who never reads your instrutions and always sends weird data. - Azat Mardan.
-
+ 
