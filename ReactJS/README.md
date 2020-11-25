@@ -1,6 +1,3 @@
-# Table of Content for study notes  
-- [ReactJS](https://github.com/khongminhtn/technology-studies#react-quickly--azat-mardan)
-
 
 # React Quickly – Azat Mardan
 
