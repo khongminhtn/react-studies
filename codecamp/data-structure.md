@@ -12,7 +12,19 @@
 ![nodes](https://raw.githubusercontent.com/khongminhtn/software-engineering-studies/main/codecamp/image/nodes.png)
  
 **Linked Lists**
-- Nodes that are linked to gether in a linear way
+- Comprised of nodes
+- Basic data structure and is the basis to many other structure
+- Nodes that are linked together in a linear way
+- Head node is the node at the beginning of list
+- Tail node is the end with link to None
+- Common operations
+    - Adding nodes
+    - Removing nodes
+    - Finding a node
+    - Traversing a list
+- Typically contain unidirectional link (next), occasionally bidirectional (next and previous)
+- Nodes in between head and tail that does not have other node linked to it, will become orphaned and removed from list.
+
  
 **Doubly Linked Lists**
 - Singly linked list has nodes that points only to the next node.
