@@ -1,4 +1,7 @@
 # Data Structure  
+ 
+ Differences between linksts and array is array have access to indices
+
 ### Nodes  
 - A class object.
 - Consist of 2 primary attributes and other optional attributes.
@@ -28,6 +31,7 @@
 - Wrapper, wraps all the nodes together (container)
 - Only keep tracks of the first node in the list
     - Traverse requires a method that loops through the nodes
+- Possible to have 2+ pointers to traverse the unidirectional list
 
  
 **Doubly Linked Lists**
