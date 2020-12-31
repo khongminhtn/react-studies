@@ -46,3 +46,67 @@
     - A recursive function that does not have base case will cause stack overflow
 - Execution context:
     - Contains variable within each recursive call
+
+### Sorting Algorithm  
+- 4 most common sort algorithms
+    1. Bubble Sort
+    2. Merge Sort
+    3. Quick Sort
+    4. Radix Sort
+![nodes](https://raw.githubusercontent.com/khongminhtn/software-engineering-studies/main/codecamp/image/sorting-algo.png)  
+ 
+**Bubble Sort**  
+- 2 Pointers
+- Swaps elements if element on left is larger than on right
+- Uses temp variable to store swap data
+- Algo Analysis:
+    - O(N^2)
+
+
+**Merge Sort**  
+- O(N*log(N))
+- Sometimes called divide and conquer algo
+- Splitting data into runs
+    - Divide the input in half
+    - Recursively call the sort on each of those half
+    - Continues until list contain only single element
+    - Then merging begins
+
+**Quick Sort**  
+- Worst case is O(N^2)
+- Average case is O(N*log(N))
+- Efficient Recursive algo for sorting lists/arrays
+    - Comparison sorts
+    - Ordered using > or <
+    - Uses divide and conquer strategy
+- Partition process:
+    1. Select first element as pivot
+    2. iterate through the rest of the list and place it in Lesser than or Greater than sub arrays in comparison to the pivot
+    3. This process repeats with the rest of the list until the sub arrays are 1 or 0
+ 
+**Radix Sort**
+- Sorted number with its radix position
+- O(N)
+- 2832 where 8 = 800
+- Non comparison sort
+- Has 2 variants: MSD and LSD
+ 
+ 
+### CORE ALGOS FOR: Graphs and Graph Traversals  
+1. Important to add vertices to a list "visited" to avoid an infinite loop
+**Depth-First Search**
+- Continues down the path until it reaches the end
+- Determines if a path exists between two vertices
+ 
+**Breadth-First Search**
+- Checks all values of all neighbouring value before moving into another level of depth
+- Incredible inefficient to find any path between 2 vertices
+- Execellent for finding shortest path between 2 vertices
+ 
+**Dijkstra's Algorithm**  
+- Find the shortest path from any given point to any other point in a weighted graph
+- Common application is to find the quickest route from one destination to another
+ 
+**A* Algorithm**
+- Find the shortest path from a specific given point to another specific point
+- Saving time on looking for other irrelevant paths
