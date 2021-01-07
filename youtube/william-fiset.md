@@ -180,3 +180,49 @@
         - Typically or mostly has the complexity of O(log(n))
         - Rare case worst scenario O(n)
             - due to Linear behaviour
+ 
+**Hash tables**
+- Hash table essentially is an indexable arrays
+- keys must be hashable and require a has function that convers keys to whole numbers
+- use hash function that consume key to get an index for the array
+- collisions happens when 2 keys hash to the same value
+    - solution
+        - seperate chaining
+            - a single index contain 2 seperate keys value pairs
+        - open addressing
+            - key value pairs are stored in a stable itself opposed to seperate chaining
+            - take great care of size of table
+            - Load factor = items in table / size of table
+                - when size get to a certain level, will grow expoentially
+            - use probing function to find an open slot
+                - x starts at 0 or 1 and during probing, we increment x by 1 until we found and empty slot
+                - infinite ammount of probing sequences to come up with
+                    - Linear Probing: P(x) = ax + b where a,b are constants
+                    - Quadratic probing: P(x) = ax^2 + bx + c where a,b,c are constants
+                    - Double hasing: P(k,x) = x*H(k) where H(k) is a secondary hash function
+            - avoiding cycles
+                - 
+
+**Fenwick Tree (Binary Indexed Tree)**  
+- Discussion & Examples
+    - Data Structure motivation
+        - computing sums in a range
+    - What is a Fenwick tree ?
+        - suports range queries on arrays and setting values in a static arry and getting value of prefix sum effeciently.
+        - Most effecient for static array
+        - However it takes O(n) to for updates to arrays
+    - Complexity Analysis
+        - Construction O(n)
+        - Point Update O(log(n))
+        - Range Sum O(log(n))
+        - Range Update O(log(n))
+        - Adding Index O(log(n))
+        - Adding Index
+        - Removing Index
+- Implementation details 
+    - Range query
+        - The least significant bit (LSB) determines the range of cells below it that it is responsible for.
+        - Binary 1100 LSB 1**1**00 2^position-1 = number cells
+    - Point updates
+    - Fenwick Tree Construction
+- 
