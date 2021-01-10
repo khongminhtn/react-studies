@@ -32,4 +32,61 @@ Understanding the efficiency of an algorithm
 - O(2N) When input is multiplied
 - O(log(N)) When input is divided
 - O(N^2) when input is exponential (nested arrays)
-Recursion that makes multiple call has complexity of O(branches^depth)
+Recursion that makes multiple call has complexity of O(branches^depth)  
+ 
+**Technical Questions**
+- Though intimidating, there are logical ways to approach technical questions.  
+- How To prepare (for all problems):
+    1. Solve problem on your own. Think about Time & Space complexity when solving
+    2. Code on Paper to slow down the process of coding
+    3. Test code on paper with all possible cases
+    4. Type code into IDE the same as on paper and keep track of all errors made.
+- Baseline Knowledge (Data Structure, Algorithm and Concepts):
+    - Data Structure:
+        - Linked Lists
+        - Trees, Tries & Graphs
+        - Stacks & Queues
+        - Heaps
+        - Vectors/ArrayLists
+        - Hash tables
+    - Algorithms:
+        - Breadth-First Search
+        - Depth-First Search
+        - Binary Search
+        - Merge Sort
+        - Quick Sort
+    - Concepts
+        - Bit Manipulation
+        - Memory (Stack Vs Heaps)
+        - Recursion
+        - Dynamic Programming
+        - Big O Time & Space
+- Baseline Knowledge (Powers of 2 Table)
+    - 2^7,8,10,16,20,30,32,40 = Bytes
+
+- Walking Through a Problem:
+    1. Listen
+        - Pay close attention to ALL information
+        - BUD Optimization
+            - Bottlenecks
+            - Unnecessary Wrok
+            - Duplicated Work
+    2. Example
+        - Debug examples, look for special cases
+    3. Brute Force
+        - Get a brute force solution as soon as possible then optimize from there
+    4. Optimize
+        1. Look for unused info
+        2. Solve it manually on an example, then reverse engineer your thought process. How did u solve it ?
+        3. Solve it "incorrectly" and the nthink about why the alogrithm fails
+        4. Make time vs space tradeoff. Hash tables are useful.
+    5. Walk through
+        - Walk through the approach in detail. Understand each detail before you start coding
+    6. Implement
+        - Write beautiful code
+        - Modularize the code
+        - refractor to clean up
+
+- What to expect:
+    - 
+
