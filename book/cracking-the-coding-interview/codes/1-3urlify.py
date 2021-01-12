@@ -8,7 +8,8 @@
 # Input = "Mr John Smith   "
 #          <----------->
 #           True length
-# 2 scan approach, calculate the space in a string
+# 2 scan approach, calculate the space in a string and
+# then create a new string with a new set of chars
 
 
 def urlify(string, true_length):
