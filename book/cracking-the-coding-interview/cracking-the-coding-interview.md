@@ -86,7 +86,26 @@ Recursion that makes multiple call has complexity of O(branches^depth)
         - Write beautiful code
         - Modularize the code
         - refractor to clean up
+ 
+**Optimize & Solve Technique #1: Look for BUD**
+- BUD
+- DIY (DO IT YOURSELF)
+- Simplify and Generalize
+- Base case and build
+- Data structure Brainstorm
+- Best Conceivable runtime
 
-- What to expect:
-    - 
-
+**Hash Tables**  
+- Procedure
+    1. First compute the key's hash code, which will usually be an int or long. 2 difference keys could have same hash codes
+    2. Then, map the hash code to an index in the array. Two different hash codes could map to same index
+    3. At this index, there is a linked list of keys and values, store the key and value in this index.
+        - Must use linked list because of collisions
+        - 2 Different keys to same hash code 
+        - 2 Different hash code to same index
+    
+**Arrays Tables**  
+- Resizable
+- Grow as you append items
+- Double size when it is full
+- When an array is full a new array with double size to its previous array is created and all the elements in the old array is copied over.
