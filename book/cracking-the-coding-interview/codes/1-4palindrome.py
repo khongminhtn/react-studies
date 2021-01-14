@@ -48,4 +48,10 @@ def palindrome(input): #=> boolean
         else:
             return False
 
-print(palindrome("Tooaoot"))
+
+print(palindrome("Never Odd Or even"))
+
+# ==== BOOK SOLUTION ======
+
+
+print(is_palindrome_permutation("Never Odd Or Even"))

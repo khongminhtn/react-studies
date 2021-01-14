@@ -78,7 +78,7 @@ Recursion that makes multiple call has complexity of O(branches^depth)
     4. Optimize
         1. Look for unused info
         2. Solve it manually on an example, then reverse engineer your thought process. How did u solve it ?
-        3. Solve it "incorrectly" and the nthink about why the alogrithm fails
+        3. Solve it "incorrectly" and then think about why the alogrithm fails
         4. Make time vs space tradeoff. Hash tables are useful.
     5. Walk through
         - Walk through the approach in detail. Understand each detail before you start coding
@@ -109,3 +109,15 @@ Recursion that makes multiple call has complexity of O(branches^depth)
 - Grow as you append items
 - Double size when it is full
 - When an array is full a new array with double size to its previous array is created and all the elements in the old array is copied over.
+
+**Strings & Arrays:**
+1. Palindrome
+2. traverse string from reverse for buffer
+3. Use pointers
+4. Use hash tables for unique characters
+5. Prep work
+6. Recursion
+7. Be aware of ASCII codes and UNIcodes
+8. For matrix beware of offset option
+9. Matrix questions always has complexity of O(M*N)
+10. Sorting
