@@ -120,4 +120,29 @@ Recursion that makes multiple call has complexity of O(branches^depth)
 7. Be aware of ASCII codes and UNIcodes
 8. For matrix beware of offset option
 9. Matrix questions always has complexity of O(M*N)
+    - C * R where C = Columns and R = Rows
+    - Individual entries = ```M[i,j]``` where i = ith Row and j = jth collumn
+    - Working with indices, the length of M(rows) and m(Columns) needs to be subtracted by 1
+    - Square matrix is when columns and rows length are the same
+    - Identity matrix is when you multiply anything with it, you get back the same thing. Typically denoted as I.
+    - Zero Matrix is when you add anything with the Zero Matrix, you get back the same thing.
+    - Symetrical Matrix (diagonals)
+        - One side of the seperator is called Upper triangular matrix
+        - the other side Lower triangular matrix
+    - Transpose of a matrix
+        - Mirros the matrix upper side <-> lower side.
+        - Denoted as A^T
+    - Inverse of a matrix.
+        - Denoted as A^-1
+    - Matrix equality
+        - A = B if every entries in A is equal to entries in B
+    - Matrix Addition
+        - `S[i,j]` = `A[i,j] + B[i,j]`
+    - Matrix multiplication by scalar
+        - `Z x A[M*N]` = `ZA[i,j]` for every entries in matrix A 
+    - Matrix Multiplication by vectors
+        - Order is important. 
+        - For each collumn, multiply that collumn with the first element in the vector.
+        - repeat the process for everyother vector columns 
+        - Rows cannot be multiplied
 10. Sorting
